@@ -2,28 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaurav_Paliwal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <style>
-  .circle {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-  border-radius: 50%;
-}
+  .about::-webkit-scrollbar{
+    display: none;
+  }
+  .about{
+    background-color:white;
+    opacity:0.5;
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    width:50vw;
+    z-index: 1;
+    max-width: 500px;
+    max-height:72%;
+    border-radius:20px 20px;
+    font-size:110%;
+    overflow:auto;
+    color: black;
+    animation: fadeInanimationDesc ease 4s;
+  }
+
+  .top-nav{
+    z-index: 2;
+  }
+
+  body{
+    animation: fadeInAnimation linear 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        background-image: url('loadbg3.jpg');
+      }
+    100% {
+        background-image: url('vaibhav.jpg');
+      }
+  }
+
+  @keyframes fadeInanimationDesc {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
 </style>
 
-<body style="background-image: url('vaibhav.jpg');background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;height:100vh;">
-
-
-  <nav class="navbar navbar-expand-lg px-1" data-bs-theme="dark" style="background-color: black;opacity: 0.8;">
+<body >
+  <nav class="navbar navbar-expand-lg px-1 top-nav" data-bs-theme="dark" style="background-color: black;opacity: 0.92;">
     <div class="container-fluid">
       <a class="navbar-brand me-5" href="#">
         <div>
@@ -74,9 +116,39 @@
       </div>
     </div>
   </nav>
-  <div>
-  </div>
 
+  <div class="about">
+    <p class="me-3 ms-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima officia perferendis maxime laboriosam odit obcaecati veritatis, vero, consequuntur dolore eaque explicabo! Ea provident vel accusamus aliquam magni culpa magnam!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur explicabo magni expedita repudiandae enim esse natus, sint illo odio iure amet, veritatis ut iste doloremque tempore fugit? Cum, animi!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim qui totam saepe quia atque necessitatibus quidem aliquam natus, corporis officiis vel sequi. Reprehenderit fugit recusandae temporibus harum, distinctio consequuntur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque quam fuga vitae nisi? Tempora at quidem distinctio quo dolor ab reprehenderit earum, itaque facere labore officia adipisci excepturi similique.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati laborum quaerat voluptas autem, dolore, dignissimos soluta perferendis, optio magnam aspernatur! Aut sed praesentium laborum vero, quisquam provident dolores saepe?
+    </p>
+    <div>
+      <a href="https://twitter.com/gauravpaliwal/">
+        <svg class="ms-2" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>
+      </a>
+      <a href="https://facebook.com/gauravpaliwal">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"/><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/gauravpaliwal19">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"/><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"/></svg>
+      </a>
+      <a href="https://picasaweb.google.com/gaurav.paliwal1989">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#e0e0e0" d="M24,4C12.95,4,4,12.95,4,24s8.95,20,20,20s20-8.95,20-20S35.05,4,24,4z M28.14,30h-8.22l-2.54-7.8 l6.65-4.82l6.65,4.82L28.14,30z"/><path fill="#43a047" d="M21.779,31.773c-0.997,0-1.52,0.691-1.147,1.774l2.571,7.471 c0.263,0.012,0.531,0.024,0.797,0.024c6.613,0,12.345-3.766,15.172-9.27H21.779z"/><path fill="#fdd835" d="M30.661,28.593c-0.32,0.944,0.167,1.661,1.313,1.655l7.901-0.041 c0.096-0.245,0.193-0.495,0.278-0.747c2.12-6.264,0.39-12.901-3.918-17.343L30.661,28.593z"/><path fill="#1e88e5" d="M15.915,24.248c-0.304-0.949-1.122-1.237-2.04-0.551l-6.331,4.728 c0.069,0.254,0.139,0.513,0.22,0.766c2.018,6.298,7.353,10.608,13.457,11.62L15.915,24.248z"/><path fill="#8e24aa" d="M21.118,16.431c0.798-0.598,0.803-1.464-0.146-2.108l-6.537-4.438 c-0.218,0.148-0.439,0.299-0.652,0.458C8.49,14.308,6.16,20.759,7.198,26.859L21.118,16.431z"/><path fill="#e53935" d="M30.373,19.001c0.807,0.586,1.636,0.334,1.97-0.762l2.308-7.557 c-0.206-0.164-0.415-0.331-0.631-0.487c-5.352-3.884-12.203-4.204-17.724-1.41L30.373,19.001z"/></svg>
+      </a>
+      <a href="https://www.flickr.com/photos/38041143@N06/">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#E1E7EA" d="M6,10c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v28c0,2.2-1.8,4-4,4H10c-2.2,0-4-1.8-4-4V10z"/><path fill="#1565C0" d="M16 17A7 7 0 1 0 16 31A7 7 0 1 0 16 17Z"/><path fill="#FF4081" d="M32 17A7 7 0 1 0 32 31A7 7 0 1 0 32 17Z"/></svg>
+      </a>
+      <a href="https://blog.gauravpaliwal.com/" class="ps-2 pe-2">
+        <img src="Feed-icon.svg.png" style="height:38px;width:38px;">
+      </a>
+      <a href="http://www.slideshare.net/gauravpaliwal" class="ps-2 pe-2">
+        <img src="slideshare-icon.png" style="height:38px;width:38px;">
+      </a>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
